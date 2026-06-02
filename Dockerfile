@@ -29,4 +29,4 @@ WORKDIR /var/www/html/
 RUN composer install --no-dev --optimize-autoloader
 
 # Exponer el puerto 80
-EXPOSE 80d
+EXPOSE 80
