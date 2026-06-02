@@ -1,0 +1,7 @@
+{
+    "name": "taller/servidores",
+    "description": "Taller 5 - Conexión PHP a PostgreSQL y MongoDB",
+    "require": {
+        "mongodb/mongodb": "^1.16"
+    }
+}
