@@ -7,7 +7,7 @@ $pg_host = getenv('PG_HOST') ?: 'localhost';
 $pg_port = getenv('PG_PORT') ?: '5432';
 $pg_dbname = getenv('PG_DBNAME') ?: 'taller_db';
 $pg_user = getenv('PG_USER') ?: 'postgres';
-$pg_password = getenv('PG_PASSWORD') ?: 'tu_contraseña';
+$pg_password = 'B0XnABjx8W5EmahyWTLdrwWc9XBPQi1I';
 
 try {
     $dsn = "pgsql:host=$pg_host;port=$pg_port;dbname=$pg_dbname;sslmode=require";
