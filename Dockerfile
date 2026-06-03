@@ -26,7 +26,7 @@ RUN chown -R www-data:www-data /var/www/html/
 
 # Instalar dependencias de PHP (MongoDB)
 WORKDIR /var/www/html/
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 # Exponer el puerto 80
 EXPOSE 80
