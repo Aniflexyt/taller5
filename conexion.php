@@ -10,7 +10,7 @@ $pg_user = getenv('PG_USER') ?: 'postgres';
 $pg_password = getenv('PG_PASSWORD') ?: 'tu_contraseña';
 
 try {
-    $dsn = "pgsql:host=$pg_host;port=$pg_port;dbname=$pg_dbname";
+    $dsn = "pgsql:host=$pg_host;port=$pg_port;dbname=$pg_dbname;sslmode=require";
     $pdo = new PDO($dsn, $pg_user, $pg_password, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
